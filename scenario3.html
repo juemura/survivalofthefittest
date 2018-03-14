@@ -1,5 +1,19 @@
 <HTML>
     <img src="SCENARIO_3_PICTURE.jpeg">
     <H1>Chicken Wing and her "friends" meet up together. Out of no where her "friends" take out there weapons and attack Chicken Wing. She ends up dying.</H1>
-    <BUTTON>YOU LOSE!!!!</BUTTON>
+   <h1 id="demo"></h1>
+   <button onclick="myFunction()">YOU LOSE!!!!</button>
+   <a href="scenario2.html">Go Back</a>
+   <script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:");
+    if (person == null || person == "") {
+        txt = "Sorry, you lose";
+    } else {
+        txt = "Sorry " + person + "! you lost!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
 </HTML>
